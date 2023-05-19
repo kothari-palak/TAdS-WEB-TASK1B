@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    background-color: azure;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 70px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+header h1 {
+    font-size: 27px;
+    font-weight: 300;
+    color: lightskyblue;
+}
+
+header h2 {
+    font-size: 27px;
+    color: darkgrey;
+    margin-top: 8px;
+    margin-bottom: 12px;
+}
+
+header p {
+    font-size: 17px;
+    color: lightskyblue;
+    font-weight: 300;
+    width: 100%;
+    margin: 0 auto;
+}
+
+main .CARDS {
+    margin-top: 70px;
+}
+
+main .CARDS .card {
+    background-color: white;
+    padding: 29px 25px;
+    width: 100%;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid;
+    box-shadow: 0px 5px 10px 0px aliceblue;
+}
+
+main .CARDS .cardown {
+    background-color: white;
+    padding: 29px 25px;
+    width: 100%;
+    margin: 0 auto 25px auto;
+    border-radius: 10px;
+    border-top: 2px solid;
+    box-shadow: 0px 5px 10px 0px aliceblue;
+}
+
+main .CARDS .card .icon {
+    display: block;
+    margin-left: auto;
+}
+
+main .CARDS .cardown .icon {
+    display: block;
+    margin-left: auto;
+}
+
+main .CARDS .card:nth-last-of-type(1) {
+    border-color: cyan;
+}
+
+main .CARDS .card:nth-last-of-type(2) {
+    border-color: red;
+}
+
+main .CARDS .cardown:nth-last-of-type(4) {
+    border-color: blue;
+}
+
+main .CARDS .cardown:nth-last-of-type(3) {
+    border-color: orange;
+}
+
+main .CARDS .card p {
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+}
+
+main .CARDS .cardown p {
+    font-size: 13px;
+    letter-spacing: .5px;
+    line-height: 1.8;
+    margin: 12px 0 36px 0;
+
+}
+
+main .CARDS {
+    display: grid;
+    grid-template-columns: repeat(2, 352px);
+    column-gap: 25px;
+    justify-content: center;
+}
+
+main .CARDS .cardown {
+    transform: translateX(50%);
+}
